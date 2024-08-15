@@ -1,7 +1,10 @@
 import express from "express";
 import path from "path";
+import { fileURLToPath } from "url";
 
 const app = express();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Configure EJS and static file serving
 app.set("views", path.join(__dirname, "views"));
@@ -18,7 +21,7 @@ app.get("/teacherDashboard", (req, res) => res.render("teacherDashboard"));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
-  console.error(err.stack);
+  console.error("Unhandled error:", err);
   res.status(500).send('Something broke!');
 });
 
