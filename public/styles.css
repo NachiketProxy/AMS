@@ -1,0 +1,77 @@
+.email-file {
+    height: 30px;
+    width: 30px;
+    margin: none;
+}
+
+.padlock {
+    height: 30px;
+    width: 30px;
+    margin: none;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 400px;
+    height: 450px;
+    margin-top: 120px;
+}
+
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.email {
+    justify-content: center;
+    align-items: center;
+    margin: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.password {
+    justify-content: center;
+    align-items: center;
+    margin: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#button {
+    background-color: khaki;
+    color: brown;
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    transition: 0.5s;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    padding-left: 102px;
+    padding-right: 102px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#button:hover {
+   background-color: brown;
+   color: khaki;
+   cursor: pointer;
+}
+
+#button:active {
+    opacity: 0.6;
+}
+
+
